@@ -1,0 +1,19 @@
+function drawChessBoard(row,col){
+var s="";
+var flag=0;
+	for(var i=0;i<row;i++) {
+		for(var j=0;j<col;j++){
+			if(flag){
+				s+="#";
+				flag=0;
+			}else {
+				s+=" ";
+				flag=1;
+			}
+		}
+		(!flag)?flag=1:flag=0;
+		s+="\n";
+	}
+console.log(s)
+}
+drawChessBoard(10,10);
